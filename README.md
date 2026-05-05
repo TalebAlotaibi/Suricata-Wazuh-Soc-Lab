@@ -4,6 +4,7 @@
 ![Suricata](https://img.shields.io/badge/IDS-Suricata-red)
 ![Wazuh](https://img.shields.io/badge/SIEM-Wazuh-green)
 
+---
 ## 🎯 Project Objective
 To simulate a real-world SOC environment for detecting, analyzing, and responding to network-based attacks using IDS and SIEM technologies.
 
@@ -195,6 +196,13 @@ sudo systemctl restart wazuh-agent
 
 ---
 
+## 📄 Documentation
+
+- Full implementation report:  
+  [Download PDF](./Wazuh_Suricata_Implementation_Summary.pdf)
+
+  ---
+  
 ## 🧠 Author
 
 **Taleb Alotaibi**  
