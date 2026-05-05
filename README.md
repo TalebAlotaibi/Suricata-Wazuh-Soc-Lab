@@ -1,16 +1,47 @@
-# 🛡️ Home SOC Lab: Suricata IDS + Wazuh SIEM Integration
+# 🛡️ SOC Lab | Suricata IDS + Wazuh SIEM for Real-Time Threat Detection & Monitoring
 
-This project demonstrates how to set up a functional **Network Intrusion Detection System (NIDS)** using **Suricata 6.0.8** integrated with **Wazuh 4.7**, providing real-time alerting, log collection, and threat visibility.
+![SOC Lab](https://img.shields.io/badge/SOC-Lab-blue)
+![Suricata](https://img.shields.io/badge/IDS-Suricata-red)
+![Wazuh](https://img.shields.io/badge/SIEM-Wazuh-green)
+
+## 🎯 Project Objective
+To simulate a real-world SOC environment for detecting, analyzing, and responding to network-based attacks using IDS and SIEM technologies.
 
 ---
+## 🏗️ Architecture Overview
+
+- Adversary Simulation: Kali Linux (Attack Emulation)
+- Monitoring: Suricata IDS
+- SIEM: Wazuh (Security Monitoring, Log Analysis & Alerting)
+- Log Source: Suricata EVE JSON logs
+- Host: Ubuntu Server
+
+## 🌐 Environment
+This lab is built and tested in a virtualized environment using VirtualBox/VMware.
 
 ## 🔧 Technologies Used
 
-- **Suricata 6.0.8** – NIDS/IPS engine
-- **Wazuh 4.7** – Security Information and Event Management (SIEM)
-- **Ubuntu** – Host OS
-- **Kali Linux** – Attacker simulation
-- **Custom scripts** – Automation for dependencies and rules
+- 🛡️ Suricata 6.0.8 – Network IDS/IPS engine  
+- 📊 Wazuh 4.7 – SIEM & log analysis platform  
+- 🐧 Ubuntu – Host operating system  
+- 💀 Kali Linux – Attack simulation environment  
+- ⚙️ Custom scripts – Automation and rule setup
+
+---
+
+## 🔄 Detection Flow
+
+1. Attacker generates malicious traffic
+2. Suricata detects anomalies via rules
+3. Logs are written to eve.json
+4. Wazuh agent collects logs
+5. Alerts appear in Wazuh dashboard
+
+## 🧪 Security Use Cases
+
+- SSH brute-force detection  
+- Port scanning detection  
+- Suspicious traffic monitoring
 
 ---
 
@@ -149,10 +180,18 @@ sudo systemctl restart wazuh-agent
 
 ## ✅ What's Next
 
-- [ ] Simulate common attacks from Kali (SSH brute force, reverse shell)
-- [ ] Detect with Suricata and alert in Wazuh
-- [ ] Build dashboards or alerts based on MITRE ATT&CK techniques
-- [ ] Add Sigma rules or integrate TheHive for incident handling
+- Detect brute force attacks using Suricata rules  
+- Map alerts to MITRE ATT&CK techniques for threat classification 
+- Create Wazuh dashboards for incident visualization  
+- Integrate TheHive for incident response workflow  
+
+---
+## 📌 Skills Demonstrated
+
+- Network traffic analysis  
+- IDS/IPS rule tuning and configuration 
+- SIEM log correlation  
+- Threat detection engineering
 
 ---
 
